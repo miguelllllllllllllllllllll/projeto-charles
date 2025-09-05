@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		  <title>MEU PERFIL</title>
+          <link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="issoaiestilo.css">
+	</head>
+	  <body>
+        <header>
+            <nav class="menu">
+                <a href="#">inicio</a>
+                <a href="#">sobre</a>
+                <a href="#">fotos</a>
+                <a href="#">contatos</a>
+            </nav>
+        </header>
+		<div>
+			<h1 class="titulo-principal">sobre mim</h1>
+				<img src="https://focalizando.com.br/sites/default/files/inline-images/Fotos-para-perfil-do-Whatsapp-masculino-1170x700.webp">
+				<figure>
+					<div class="grid">
+						<div class="card">
+					<ol>
+						<li>depressao</li>
+						<li>ansiedade</li>
+                        <li>angustia</li>
+						<li>tristeza profunda</li>
+					</ol>
+					</div>
+					</div>
+		</div>
+	  </body>
+</html>
