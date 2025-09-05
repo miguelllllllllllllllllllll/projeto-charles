@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ body{
+    font-family: arial, sans-serif;
+ }
+
+ .menu{
+    background-color: rgb(104, 100, 131);
+    display: flex;
+    justify-content: center;
+ }
+
+ .menu a{
+    color:white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-size:25px;
+ }
+
+ .menu a:hover{
+    background-color: black;
+ }
+ .titulo-principal{
+   text-align: center;
+   color: rgb(22, 35, 101);
+
+ }
+ .grid{
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+   gap: 16px;
+ }
+ .card{
+   background: #fff;
+   border-radius: 8px;
+   padding: 16px;
+   box-shadow: 0px 2px 6px rgb(0,0,0,0.1);
+ }
+ ol{
+   padding-left: 20px;
+ }
+ ol li{
+   margin-bottom: 6px;
+ }
