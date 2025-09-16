@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ body{
+    font-family: arial, sans-serif;
+ }
+
+ .menu{
+    background-color: rgb(104, 100, 131);
+    display: flex;
+    justify-content: center;
+ }
+
+ .menu a{
+    color:white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-size:25px;
+ }
+
+ .menu a:hover{
+    background-color: black;
+ }
+ .titulo-principal{
+   text-align: center;
+   color: rgb(22, 35, 101);
+
+ }
+ .grid{
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+   gap: 16px;
+ }
+ .card{
+   background: #fff;
+   border-radius: 8px;
+   padding: 16px;
+   box-shadow: 0px 2px 6px rgb(0,0,0,0.1);
+ }
+ ol{
+   padding-left: 20px;
+ }
+ ol li{
+   margin-bottom: 6px;
+ }
+ .certificado-card {
+    position: relative;  /* Para colocar a seta de forma relativa ao cartão */
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0px 2px 6px rgb(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.btn-ver-certificado {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-certificado:hover {
+    background-color: #45a049;
+}
+
+/* Seta "mais" */
+.certificado-card .seta-mais {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 20px;
+    color: #777;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.certificado-card:hover .seta-mais {
+    transform: translateX(5px);  /* Efeito de movimento quando o mouse passa */
+}
+
+.certificado-card:hover .seta-mais::before {
+    content: "→";  /* Aqui podemos usar uma seta simples */
+    font-size: 30px;
+    color: #333;
+}
+@media (max-width: 768px) {
+    .projetos-grid, .certificados-grid {
+        grid-template-columns: 1fr;
+    }
+}
