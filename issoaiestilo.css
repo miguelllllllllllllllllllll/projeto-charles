@@ -201,3 +201,32 @@ html {
 .btn-ver-certificado:hover {
   background-color: #2980b9;
 }
+/* Estilo para a seta */
+.seta-certificados {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.seta-certificados a {
+  font-size: 18px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.seta-certificados .seta {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.seta-certificados a:hover .seta {
+  transform: translateX(5px);
+}
+
+.seta-certificados a:hover {
+  color: #0056b3;
+}
